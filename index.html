@@ -1,62 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Página - Módulo I - Primeiros Passos com HTML</title>
-</head>
-<body>
-    <h1>Módulo 1 - Primeiros Passos com HTML</h1>
+  </head>
+  <body>
+    <h1 id="inicio">Módulo 1 - Primeiros Passos com HTML</h1>
     <hr />
 
     <h2>Índice</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste índice você deve colocar os tópicos que mais entendeu. Estes apenas são sugestões.</p>
+
     <ul>
-        <li><a href="#">História dos computadores</a></li>
-        <li><a href="#">O que são <i>Clients</i>?</a></li>
-        <li><a href="#">O que são <i>Servers</i>?</a></li>
-        <li><a href="#">Como é uma estrutura básica de um HTML?</a></li>
-        <li><a href="#">Entendendo a diferença entre listas ordenadas e não ordenadas</a></li>
-        <li><a href="#">Links de referências</a></li>
+      <li><a href="#estrutura-html">Estrutura Básica do HTML</a></li>
+      <li><a href="#tags-elementos">Tags e Elementos</a></li>
+      <li><a href="#atributos">Atributos das Tags</a></li>
+      <li><a href="#textos">Textos</a></li>
+      <li>
+        <a href="#elementos">Elementos Semânticos: main, header, footer</a>
+      </li>
+      <li><a href="#referencias">Links de Referências</a></li>
     </ul>
 
-    <h2>História dos computadores</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="estrutura-html">Estrutura Básica do HTML</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
 
-    <h2>O que são <i>Clients</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <p>
+      Uma página HTML típica começa com: <br /><br />
 
-    <h2>O que são <i>Servers</i>?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <code>
+        &lt;!DOCTYPE html&gt;<br />
+        &lt;html lang="pt-BR"&gt;<br />
+        &nbsp;&nbsp;&lt;head&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;meta name="viewport"
+        content="width=device-width, initial-scale=1.0"&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;title&gt;Título da Página&lt;/title&gt;<br />
+        &nbsp;&nbsp;&lt;/head&gt;<br />
+        &nbsp;&nbsp;&lt;body&gt;<br />
+        &nbsp;&nbsp;&nbsp;&nbsp;&lt;!-- Conteúdo visível --&gt;<br />
+        &nbsp;&nbsp;&lt;/body&gt;<br />
+        &lt;/html&gt;
+      </code>
+      <br /><br />
 
-    <h2>Como é uma estrutura básica de um HTML?</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+      <strong
+        ><u><code>&lt;!DOCTYPE html&gt;:</code></u></strong
+      >
+      informa ao navegador que o documento está em HTML5. Sem isso, pode haver
+      comportamentos inesperados. <br />
+      <strong
+        ><u><code>&lt;html&gt;:</code></u></strong
+      >
+      é o elemento raiz, que pode incluir o atributo
+      <small
+        ><u><i>lang</i></u></small
+      >
+      para definir o idioma. <br />
+      <strong
+        ><u><code>&lt;head&gt;:</code></u></strong
+      >
+      traz metadados como título, estilos e scripts. <br />
+      <strong
+        ><u><code>&lt;body&gt;:</code></u></strong
+      >
+      contém todo o conteúdo visível.
+    </p>
 
-    <h2>Entendendo a diferença entre listas ordenadas e não ordenadas</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Neste trecho, coloque com suas palavras o que entendeu sobre o assunto. 
-       Não esqueça de colocar links para outros sites e também de formatar o texto com 
-       <strong>negrito</strong>, <i>itálico</i> e <u>sublinhado</u> quando necessário.</p>
-    <p>Não esqueça também de colocar o link para voltar até o índice. (Lembra das âncoras?)</p>
+    <h2 id="tags-elementos">Tags e Elementos</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
 
-    <h2>Links de referências</h2>
-    <p><strong><u>INSTRUÇÕES:</u> </strong>Coloque links para outras páginas que falam sobre estes assuntos. Não esquece de que precisa abrir em outra aba/janela do navegador.</p>
+    <p>
+      Uma <strong>tag</strong> é um nome entre os símbolos < >, como
+      <code>&lt;p&gt;</code>, <code>&lt;img&gt;</code>,
+      <code>&lt;li&gt;</code> e outros. <br />
+      Um <strong>elemento</strong> inclui a tag de abertura, o conteúdo e a tag
+      de fechamento, por exemplo: <br />
+      <code>&lt;p&gt;Texto do parágrafo&lt;/p&gt;</code> <br />
+      Há também tags de encerramento automático, ou seja, não precisam de
+      fechamento, como <code>&lt;img&gt;</code> ou <code>&lt;br&gt;</code>.
+    </p>
+
+    <h2 id="atributos">Atributos das Tags</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <p>
+      Os atributos fornecem informações extras aos elementos, no formato
+      <strong><u>chave="valor"</u></strong
+      >, e são colocados na tag de abertura. <br />
+      Exemplos: <br /><br />
+
+      <code>
+        &lt;a href="https://exemplo.com"&gt;Link&lt;/a&gt; <br />
+        &lt;img src="foto.jpg" alt="Descrição da imagem"&gt; <br />
+        &lt;p id="paragrafo1" class="meu-estilo"&gt;Texto...&lt;/p&gt;
+      </code>
+      <br /><br />
+
+      <strong
+        ><u><code>href</code></u></strong
+      >,
+      <strong
+        ><u><code>src</code></u></strong
+      >,
+      <strong
+        ><u><code>id</code></u></strong
+      >,
+      <strong
+        ><u><code>class</code></u></strong
+      >
+      são atributos comuns.
+    </p>
+
+    <h2 id="textos">Textos</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <p>
+      Tags de texto incluem: <br /><br />
+
+      <strong
+        ><u><code>&lt;h1&gt;</code></u></strong
+      >
+      a
+      <strong
+        ><u><code>&lt;h6&gt;</code></u></strong
+      >
+      para títulos com diferentes níveis de importância; <br /><br />
+      <strong
+        ><u><code>&lt;p&gt;</code></u></strong
+      >
+      para parágrafos; <br /><br />
+      Listas:
+      <strong
+        ><u><code>&lt;ul&gt;</code></u></strong
+      > (usada quando a ordem dos itens não importa (ex: lista de compras, tópicos)); <br>
+      <strong
+        ><u><code>&lt;ol&gt;</code></u></strong
+      > (usada quando a ordem dos itens importa (ex: passo a passo, rankings, instruções)).
+      
+    </p>
+
+    <h2 id="elementos">Elementos Semânticos: main, header, footer</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+
+    <p>
+      <code>header</code>: representa a introdução de uma página ou seção. Pode
+      conter títulos, logotipos, menus etc; <br />
+      <code>main</code>: contém o conteúdo principal da página. Deve haver
+      apenas um único <code>&lt;main&gt;</code> por documento; <br />
+      <code>footer</code>: representa o rodapé de uma página ou seção, contendo
+      informações complementares como autor, direitos autorais, links de
+      navegação secundária etc. <br /><br />
+
+      Essas tags são importantes para dar significado semântico à página,
+      ajudando navegadores, mecanismos de busca e tecnologias assistivas a
+      entenderem melhor o conteúdo.
+    </p>
+
+    <h2 id="referencias">Links de Referências</h2>
+    <small><a href="#inicio">(Voltar)</a></small>
+
     <ul>
-        <li><a href="#">http://dio.me</a></li>
-        <li><a href="#">http://w3c.org</a></li>
+      <li>
+        <a
+          href="https://www.freecodecamp.org/portuguese/news/manual-de-html-aprendizagem-de-html-para-iniciantes"
+          target="_blank"
+          >Estrutura básica do HTML, Tags, Atributos e Textos</a
+        >
+      </li>
+      <li>
+        <a
+          href="https://www.treinaweb.com.br/blog/guia-da-linguagem-html"
+          target="_blank"
+          >Elementos Semânticos</a
+        >
+      </li>
     </ul>
-
-</body>
+  </body>
 </html>
